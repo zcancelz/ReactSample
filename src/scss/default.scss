@@ -1,0 +1,39 @@
+@mixin align($location){
+  position:relative; display:inline-block; float:$location;
+}
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model; // Safari <= 5
+  -moz-box-sizing: $box-model; // Firefox <= 19
+  box-sizing: $box-model;
+}
+@mixin transition-duration($transitionDuration){
+  -webkit-transition-duration: $transitionDuration;
+  -moz-transition-duration: $transitionDuration;
+  transition-duration: $transitionDuration;
+}
+@mixin transition-timing-function($transitionTimingFunction){
+  -webkit-transition-duration: $transitionTimingFunction;
+  -moz-transition-duration: $transitionTimingFunction;
+  transition-duration: $transitionTimingFunction;
+}
+@mixin opacity($opacity){
+  -webkit-transition-duration: $opacity;
+  -moz-transition-duration: $opacity;
+  transition-duration: $opacity;
+}
+@mixin border-radius($borderRadius){
+  -webkit-transition-duration: $borderRadius;
+  -moz-transition-duration: $borderRadius;
+  transition-duration: $borderRadius;
+}
+@mixin box-shadow($boxShadow) {
+  -webkit-transition-duration: $boxShadow;
+  -moz-transition-duration: $boxShadow;
+  transition-duration: $boxShadow;
+}
+
+@mixin background-image($backgroundImage){
+  -webkit-transition-duration: $backgroundImage;
+  -moz-transition-duration: $backgroundImage;
+  transition-duration: $backgroundImage;
+}

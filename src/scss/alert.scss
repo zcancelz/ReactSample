@@ -1,0 +1,15 @@
+@import "pop-up";
+
+.alert_popup{
+  .popup_row{
+    padding:32px 30px;
+    p {
+      line-height:1.8;
+      a { font-weight:bold; color:$tvgreen; }
+    }
+
+    button { width:110px; margin:20px 0; padding:0px;  }
+    .outlined_btn { float:left; }
+    .primary_btn { float:right; }
+  }
+}

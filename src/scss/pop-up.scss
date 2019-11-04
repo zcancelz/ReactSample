@@ -1,0 +1,218 @@
+@import "default";
+@import "color";
+@import "button";
+.popup_container{
+  min-width:420px; max-height:700px; overflow-y:auto; overflow-x:hidden;
+  display: block; position:relative;
+  background-color:$white; @include border-radius(4px);
+  font-size:14px;
+
+  @mixin selectDiv($width){
+    width:$width;
+    .select{
+      line-height:12px; font-size:12px; padding:0 6px; margin:6px 0;
+      &:disabled {
+        //	background:$lightgrey;
+      }
+    }
+  }
+
+  .selectbox{
+    @include selectDiv(180px);
+  }
+
+  i{ display:block; font-size:0.75rem; line-height:0.75rem; }
+  li {font-size: 0.75rem; }
+
+  .amount{ font-size:1.2rem; color:$orange; }
+
+  a{ color:$orange; font-weight:bold; font-size:14px; }
+
+  table {width:100%;}
+
+  table tr td{ }
+
+  .siteSetting{
+    margin-top:12px;
+    margin-left: 23px; width:80%;
+    border-top:1px solid black;
+    tr td{
+      border-bottom:1px solid black;
+      padding:6px 10px;
+    }
+  }
+
+  .padding12{
+    padding:12px 0;
+  }
+
+  .popup_title{
+    padding: 42px 30px 0px 30px;
+    width:100%; display:block;
+    h1, h2, .edit_btn, .edit_cancel, .edit_confirm, button { display: inline-block; position:relative; float:left; letter-spacing:-1px; }
+
+    h2 num{color:$redorange;}
+
+    h1 { margin-bottom:32px; }
+
+    // ------------------- edit btn
+    .popup_edit2{
+      display:inline-block; padding:0;
+      background-color:transparent;
+      &:hover{ background-color:transparent; }
+      .edit_btn{
+        display:none;
+        width:36px; height:36px;
+        background:{
+          image:url("../imgs/btn_edit.png");
+          repeat:no-repeat;
+          size:24px 24px; position:center center;
+        }
+        &:hover{
+          cursor:pointer;
+        }
+        &.active{
+          display:block;
+        }
+      }
+      .edit_cancel{
+        @extend .edit_btn;
+        background:{ image:url("../imgs/btn_edit_cancel.png"); }
+
+      }
+      .edit_confirm{
+        @extend .edit_btn;
+        background:{ image:url("../imgs/btn_edit_confirm.png");	}
+      }
+    }
+
+    .popup_edit{
+      display:inline-block; padding:0; width:40px; height:40px;
+      @extend .outlined_btn;
+      @include border-radius(50%);
+
+      .edit_btn{
+        display:none;
+        width:36px; height:36px;
+        background:{
+          image:url("../imgs/btn_edit.png");
+          repeat:no-repeat;
+          size:24px 24px; position:center center;
+        }
+        &:hover{
+          cursor:pointer;
+        }
+        &.active{
+          display:block;
+        }
+      }
+    }
+
+    .popup_delete{
+      @extend .secondary_no_btn;
+      @include border-radius(50%);
+      display:inline-block; height:40px; width:40px; padding:0;
+      background:{
+        image:url("../imgs/btn_trashcan.png");
+        repeat:no-repeat;
+        size:24px 24px; position:center center;
+      }
+
+      &:hover{
+        background-color:$lightgrey;
+      }
+    }
+
+    button { margin-left:10px; }
+  }
+
+  .popup_align{ display: inline-block; position:relative; float:left; }
+  .popup_row{
+    display:block; width:100%; position:relative; float:left; text-align:left;
+    padding: 0px 30px 0px 30px;  box-sizing:border-box;
+    h4 { @extend .popup_align; span{font-weight:normal; margin-left:6px; }}
+    &:last-child{ padding-bottom:32px; }
+    .left, .right { @extend .popup_align; width:49.5%; }
+
+    .right{padding-left:20px;}
+
+    .alignToCenter{text-align:center;}
+
+    input{
+      width:200px;
+      &:read-only{ border:none; }
+      &:disabled { background:$lightgrey; }
+    }
+
+    input[type=file]{
+      border:none;
+    }
+
+    .errormsg { font-size:11px; color:#f00; display:none; }
+
+    .h50{ height:50px; line-height:50px;}
+    .h32{ height:32px; line-height:32px;}
+
+    .subTable {
+      tr {
+        th{color:$grey2; font-weight:bold; border-top:1px solid $bordercolor; background-color:$lightgrey; text-align: center;}
+        td:first-child{ min-width:100px; }
+        td{	border-top:1px solid $bordercolor; font-size:12px; line-height:1.25; text-align: center;}
+        &:last-child td{border-bottom:1px solid $bordercolor;}
+      }
+    }
+
+    .num{color:$green;}
+  }
+
+  #submit_btn{
+    width:160px; margin-top:32px;
+  }
+
+  .popup_row_request{
+    @extend .popup_row;
+    min-height:42px;
+    input, textarea{ width:325px; }
+    table tr td:first-child {  width:150px; }
+  }
+
+
+  .alert_popup{
+    .popup_row{
+      p {
+        line-height:2.0;
+        a { font-weight:bold; color:$orange; }
+      }
+      button { width:100px; margin-top:20px; padding:0; }
+      .outlined_btn { float:left; }
+      .primary_btn { float:right;}
+    }
+  }
+
+  .siteList{
+    th{
+      border-top:1px solid black;
+      border-bottom:1px solid black;
+      font-weight:900;
+      min-height:36px; line-height: 36px;
+    }
+
+    tr td{
+      border-bottom:1px solid $bordercolor;
+    }
+  }
+}
+
+
+#ui-datepicker-div{
+  background:$white; padding: 32px 30px;
+  border:1px solid $bordercolor;
+  @include border-radius(4px);
+}
+
+.popup_td_txt {
+  tr td{
+    padding:5px 0;
+  }
+  h4{margin:0px;}
+}

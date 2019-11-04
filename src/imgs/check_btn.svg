@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 36 16" style="enable-background:new 0 0 36 16;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#666666;}
+	.st2{fill:#F4501E;}
+</style>
+<title>radio_btn</title>
+<path class="st0" d="M8,15.5c-4.1,0-7.5-3.4-7.5-7.5S3.9,0.5,8,0.5s7.5,3.4,7.5,7.5C15.5,12.1,12.1,15.5,8,15.5z"/>
+<g>
+	<path class="st1" d="M15,1v14H1V1H15 M16,0H0v16h16V0L16,0z"/>
+</g>
+<g>
+	<path class="st2" d="M35,1v14H21V1H35 M36,0H20v16h16V0L36,0z"/>
+</g>
+<polygon class="st2" points="27.4,8.9 31.3,5.1 32.5,6.3 27.4,11.5 23.5,7.6 24.8,6.4 "/>
+</svg>

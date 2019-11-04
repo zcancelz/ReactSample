@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 36 16" style="enable-background:new 0 0 36 16;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#666666;}
+	.st2{fill:#F4501E;}
+</style>
+<title>radio_btn</title>
+<path class="st0" d="M8,15.5c-4.1,0-7.5-3.4-7.5-7.5S3.9,0.5,8,0.5s7.5,3.4,7.5,7.5C15.5,12.1,12.1,15.5,8,15.5z"/>
+<path class="st1" d="M8,1c3.9,0,7,3.1,7,7s-3.1,7-7,7s-7-3.1-7-7c0,0,0,0,0,0C1,4.1,4.1,1,8,1 M8,0C3.6,0,0,3.6,0,8s3.6,8,8,8
+	s8-3.6,8-8S12.4,0,8,0z"/>
+<path class="st0" d="M28,15.5c-4.1,0-7.5-3.4-7.5-7.5s3.4-7.5,7.5-7.5s7.5,3.4,7.5,7.5C35.5,12.1,32.1,15.5,28,15.5z"/>
+<path class="st2" d="M28,1c3.9,0,7,3.1,7,7s-3.1,7-7,7s-7-3.1-7-7c0,0,0,0,0,0C21,4.1,24.1,1,28,1 M28,0c-4.4,0-8,3.6-8,8s3.6,8,8,8
+	s8-3.6,8-8S32.4,0,28,0z"/>
+<circle class="st2" cx="28" cy="8" r="4"/>
+</svg>
